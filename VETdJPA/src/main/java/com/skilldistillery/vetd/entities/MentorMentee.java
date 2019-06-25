@@ -33,7 +33,6 @@ public class MentorMentee {
 	
 	@ManyToOne
 	@JoinColumn(name = "mentor_id")
-	@JsonIgnore
 	private Mentor mentor;
 	
 	@OneToMany(mappedBy = "mentorMentee")

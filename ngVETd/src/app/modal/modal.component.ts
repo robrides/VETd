@@ -40,11 +40,11 @@ export class ModalComponent implements OnInit {
   ngOnInit() {
     this.profile = this.data.profile;
     this.myProfile = this.data.myProfile;
+    console.log(this.profile);
+    console.log(this.myProfile);
 
     this.addMenteesOrMentors();
 
-    console.log(this.profile);
-    console.log(this.myProfile);
     console.log("in init");
   }
   formatLabel(value: number | null) {
